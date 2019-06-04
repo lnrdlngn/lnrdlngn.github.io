@@ -1,0 +1,943 @@
+/*  ---------------------------
+    ---------- fonts ----------
+    --------------------------- */
+
+/* roboto-slab-100 - latin */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Roboto Slab Thin'), local('RobotoSlab-Thin'),
+       url('../sources/fonts/roboto-slab-v8-latin-100.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../sources/fonts/roboto-slab-v8-latin-100.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-slab-300 - latin */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Slab Light'), local('RobotoSlab-Light'),
+       url('../sources/fonts/roboto-slab-v8-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../sources/fonts/roboto-slab-v8-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-slab-regular - latin */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'),
+       url('../sources/fonts/roboto-slab-v8-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../sources/fonts/roboto-slab-v8-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-slab-700 - latin */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'),
+       url('../sources/fonts/roboto-slab-v8-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../sources/fonts/roboto-slab-v8-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-100 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Roboto Thin'), local('Roboto-Thin'),
+       url('../sources/fonts/roboto-v19-latin-100.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../sources/fonts/roboto-v19-latin-100.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-300 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'),
+       url('../sources/fonts/roboto-v19-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../sources/fonts/roboto-v19-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'),
+       url('../sources/fonts/roboto-v19-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../sources/fonts/roboto-v19-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-500 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'),
+       url('../sources/fonts/roboto-v19-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../sources/fonts/roboto-v19-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-700 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'),
+       url('../sources/fonts/roboto-v19-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../sources/fonts/roboto-v19-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+
+/*  -----------------------------------
+    ---------- start styles ----------
+    ---------------------------------- */
+
+/* --- variables --- */
+
+:root {
+    --primary: #362d29;
+    --primary-darker: #1d1816;
+    --secondary: #aaaaaa;
+    --secondary-darker: #919191;
+    --light: #fff;
+    --dark: #1d1d1b;
+    --light-grey: #eeeeee;
+
+    --font-family-sans-serif: 'Roboto';
+    --font-family-serif: 'Roboto Slab';
+    --font-size-base: 1rem;
+    --font-size-small: 	0.875rem;
+    --font-size-big: 1.125rem;
+}
+
+
+
+/* --- general --- */
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: var(--font-family-sans-serif);
+    color: var(--dark);
+    font-size: var(--font-size-base);
+    position: relative;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: var(--font-family-serif);
+}
+
+h1 {
+    font-size: 4.5rem;
+}
+
+h2 {
+    font-size: 3.4375rem;
+}
+
+a {
+    color: inherit;
+}
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    line-height: 1.2;
+}
+
+.btn {
+    border-radius: 0;
+    padding: .75rem .75rem;
+    min-width: 175px;
+    height: 50px;
+    font-size: var(--font-size-small);
+}
+
+.btn-primary {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+.btn-primary:hover {
+    background: var(--primary-darker);
+    border-color: var(--primary-darker);
+}
+.btn-primary:active,
+.btn-primary:focus {
+    background: var(--primary) !important;
+    border-color: var(--primary) !important;
+    box-shadow: 0 0 0 0.2rem rgba(54, 45, 41, .5) !important;
+}
+
+.btn-secondary {
+    background: var(--secondary);
+    border-color: var(--secondary);
+    color: var(--dark);
+}
+.btn-secondary:hover {
+    background: var(--secondary-darker);
+    border-color: var(--secondary-darker);
+    color: var(--dark);
+}
+.btn-secondary:active,
+.btn-secondary:focus {
+    background: var(--secondary) !important;
+    border-color: var(--secondary) !important;
+    box-shadow: 0 0 0 0.2rem rgba(170, 170, 170, .5) !important;
+    color: var(--dark);
+}
+button:focus {
+    outline: 0;
+}
+
+.link-underlined {
+    display: inline-block;
+    border-bottom: 2px solid currentColor;
+    margin-bottom: 10px;
+}
+
+.section {
+    padding: 115px 0;
+}
+
+/* anchor link offset for fixed header */
+:target::before {
+    content: "";
+    display: block;
+    height: 108px; /* fixed header height*/
+    margin: -108px 0 0; /* negative fixed header height */
+}
+
+
+
+/* --- header --- */
+
+.navbar {
+    padding: .5rem 2rem;
+    transition: all .3s;
+}
+@media (max-width: 768px) {
+    .navbar {
+        padding: .5rem 1rem;
+    }
+}
+
+.navbar .navbar-toggler-icon {
+    background: url('data:image/svg+xml,<svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path stroke="rgb(255, 255, 255)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>');
+    width: 2em;
+    height: 2em;
+}
+
+.navbar:not(.transparent) {
+    background: var(--light);
+    box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.3);
+}
+.navbar:not(.transparent) .navbar-toggler-icon {
+    background: url('data:image/svg+xml,<svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path stroke="rgb(29, 29, 27)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>');
+}
+
+.navbar-brand {
+    max-width: 70px;
+}
+
+.navbar .navbar-nav .nav-link {
+    font-size: var(--font-size-small);
+    color: var(--dark);
+    position: relative;
+    letter-spacing: 0.05em;
+}
+
+@media (min-width: 992px) {
+    .navbar.transparent .navbar-nav .nav-link {
+        color: var(--light);
+    }
+}
+
+
+.navbar .navbar-nav .nav-item .nav-link::after {
+    content: '';
+    border-bottom: 2px solid transparent;
+    position: absolute;
+    bottom: 10px;
+    left: 8px;
+    right: 8px;
+    transition: all .3s;
+}
+
+.navbar .navbar-nav .nav-item .nav-link.active::after {
+    border-color: var(--dark);
+}
+
+.navbar.transparent .navbar-nav .nav-item .nav-link.active::after {
+    border-color: var(--light);
+}
+
+.icon-bar {
+	width: 32px;
+	height: 2px;
+	background-color: var(--light);
+	display: block;
+	transition: all 0.2s;
+}
+.icon-bar:not(:first-child) {
+    margin-top: 10px
+}
+
+.navbar:not(.transparent) .icon-bar {
+    background-color: var(--dark);
+}
+
+.toggle-offcanvas {
+    border: none;
+    background: transparent !important;
+    max-width: 44px;
+    background: transparent;
+}
+
+.toggle-offcanvas:not(.collapsed) .top-bar,
+.toggle-offcanvas:not(.collapsed) .bottom-bar {
+    width: 42px;
+}
+
+.toggle-offcanvas .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+
+.toggle-offcanvas .middle-bar {
+  opacity: 0;
+}
+
+.toggle-offcanvas .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+
+.toggle-offcanvas.collapsed .top-bar {
+  transform: rotate(0);
+}
+
+.toggle-offcanvas.collapsed .middle-bar {
+  opacity: 1;
+}
+
+.toggle-offcanvas.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+
+.navbar-offcanvas {
+    position: fixed;
+    top: 76px;
+    bottom: 0;
+    right: -280px;
+    width: 280px;
+    transition: all .3s;
+    padding: 1rem 1rem;
+    background: var(--light);
+    box-shadow: 0px 24px 24px 0px rgba(0, 0, 0, 0.3);
+}
+.navbar-offcanvas .navbar-offcanvas-backdrop {
+    position: fixed;
+    top: 76px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--dark);
+    opacity: 0;
+    pointer-events: none;
+    transition: all .3s;
+}
+.navbar-offcanvas:not(.collapsed) {
+    right: 0px;
+}
+.navbar-offcanvas:not(.collapsed) .navbar-offcanvas-backdrop {
+    opacity: .5;
+    right: 280px;
+}
+
+
+
+
+/* --- hero image --- */
+
+.jumbotron {
+    background-image: url('../sources/images/bild_26.jpg');
+    background-size: cover;
+    color: var(--light);
+    padding: 10rem 2rem;
+    margin: 0;
+}
+
+.jumbotron p {
+    letter-spacing: 0.05em;
+}
+
+.jumbotron .fa-chevron-down {
+    text-align: center;
+    display: block;
+    font-size: 4.5rem;
+    text-shadow: 0px 0px 24px rgba(0, 0, 0, 0.3);
+    margin-top: 9rem;
+}
+
+
+
+/* --- section: die-muehlenbaecker --- */
+
+#die-muehlenbaecker {
+    background: var(--light-grey);
+}
+
+.intro {
+    margin-bottom: 85px;
+}
+
+.intro p {
+    max-width: 620px;
+    margin-bottom: 30px;
+}
+
+.intro h2 {
+    margin-bottom: 40px;
+}
+
+.eu-biosiegel {
+    max-width: 90px;
+}
+
+.text-block-1,
+.text-block-2,
+.text-block-3 {
+    padding: 0 15px;
+    margin-bottom: 80px;
+}
+
+.text-block-image {
+    box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.3);
+    padding: 0;
+}
+
+.text-block-text p {
+    background: var(--light);
+    padding: 30px 35px;
+    max-width: 375px;
+    box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.3);
+}
+
+.text-block-1 .text-block-text,
+.text-block-3 .text-block-text {
+    padding-left: 0;
+    padding-top: 100px;
+}
+
+.text-block-2 .text-block-text {
+    padding-right: 0;
+    padding-top: 40px;
+}
+
+.text-block-2 p {
+    margin-left: auto;
+}
+
+.price-content,
+.time-content {
+    font-size: 1.875rem;
+}
+
+.price,
+.time {
+    padding: 10px 15px;
+    border-left: 5px solid var(--dark);
+}
+
+
+
+/* --- section: vier-mal --- */
+
+#vier-mal {
+    background-image: url('../sources/images/bild_28.jpg');
+    background-size: cover;
+    color: var(--light);
+}
+
+#vier-mal i.fas {
+    font-size: 3.75rem;
+    margin-bottom: 45px;
+}
+
+#vier-mal .from {
+    font-size: 	var(--font-size-small);
+    margin-right: 5px;
+}
+
+#vier-mal .bigger {
+    font-size: var(--font-size-big);
+}
+
+#vier-mal h2 {
+    margin-bottom: 115px;
+}
+
+
+
+/* --- section: anmeldung --- */
+
+#anmeldung {
+    background: var(--light-grey);
+}
+
+#anmeldung h2 {
+    margin-bottom: 50px;
+}
+
+.form-group label {
+
+    font-size: var(--font-size-small);
+}
+.form-group {
+    margin-bottom: 3.125rem;
+}
+
+.form-control {
+    border-radius: 0;
+    height: 50px;
+    border: none;
+    padding: .375rem 1rem;
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.2);
+}
+.form-control:hover {
+    box-shadow: none;
+}
+.form-control::placeholder {
+    color: #cccccc;
+}
+.form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(54, 45, 41, .25);
+}
+
+legend.col-form-label {
+    font-size: var(--font-size-small);
+}
+
+.form-check label.form-check-label {
+    font-size: var(--font-size-base);
+    cursor: pointer;
+}
+
+#spezial-angebot .form-check label.form-check-label {
+    padding-left: 12px;
+}
+
+.form-check {
+    padding-left: .25rem;
+}
+
+.form-check input {
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.form-check .radio {
+    height: 11px;
+    width: 11px;
+    background: var(--light);
+    display: inline-block;
+    border-radius: 50px;
+    position: relative;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.form-check .radio::after {
+    content: '';
+    display: block;
+    opacity: 0;
+    height: 5px;
+    width: 5px;
+    background: var(--dark);
+    border-radius: 50px;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    transition: all .3s;
+}
+.form-check input:checked ~ label .radio::after {
+    opacity: 1;
+}
+
+.pflicht {
+    margin-top: -40px;
+}
+
+
+
+/* --- section: rezepte --- */
+
+.rezept-slider * {
+    transition: all .3s;
+}
+
+#rezepte h2 {
+    margin-bottom: 115px;
+}
+
+.rezept-slider .slide {
+    padding: 0 50px;
+}
+
+.rezept-slider .owl-carousel .owl-stage-outer {
+    padding: 25px 0;
+}
+
+.slide h3 {
+    font-size: 3rem;
+}
+
+.slide-inner {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+.rezept-img {
+    /*width: 345px;*/
+    width: 42%;
+    position: absolute;
+    left: 0;
+    z-index: 10;
+}
+
+.rezept-img img {
+    transition: all .3s;
+    transition-delay: .3s;
+    height: 300px;
+    object-fit: cover;
+}
+
+.rezept-text {
+    position: absolute;
+    /*left: 345px;*/
+    left: 42%;
+    right: 0;
+    /*width: 480px;*/
+    width: 58%;
+    top: 50px;
+}
+
+.rezept-text-inner {
+    padding: 30px;
+    background: #ccc;
+    transition: all .3s;
+    transition: all .3s;
+    transition-delay: .3s;
+    display: inline-block;
+}
+
+.slide .zutaten-zubereitung {
+    max-height: 630px;
+    overflow: hidden;
+    transition: all .3s;
+}
+
+.ausblenden {
+    margin-top: 30px;
+}
+
+#weizen .rezept-text {
+    top: 25px;
+}
+
+.rezept-text-inner h3 {
+    margin-bottom: 30px;
+    word-break: break-word;
+}
+
+.owl-item.active .rezept-text-inner,
+.owl-item.active .rezept-img img {
+    box-shadow: 5px 0px 24px 0px rgba(0, 0, 0, 0.3);
+}
+
+.owl-nav {
+    font-size: 50px;
+}
+
+.owl-nav .owl-prev,
+.owl-nav .owl-next {
+    outline: 0;
+}
+
+.owl-nav .owl-next {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-60%);
+}
+
+.owl-nav .owl-prev {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-60%);
+}
+
+.owl-dots {
+    display: flex;
+    justify-content: center;
+}
+.owl-dots button.owl-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    background: var(--light);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    margin: 0 5px;
+    transition: all .3s;
+    outline: 0;
+}
+.owl-dots button.owl-dot.active {
+    background: var(--primary);
+    width: 40px;
+}
+
+/* slider open/closed */
+
+.slide:not(.closed)#weizen .slide-inner {
+    height: 830px;
+}
+
+.slide:not(.closed)#kaesegebaeck .slide-inner {
+    height: 710px;
+}
+
+.slide:not(.closed)#sesamkugeln .slide-inner {
+    height: 650px;
+}
+
+.slide.closed .zutaten-zubereitung {
+    max-height: 0;
+}
+
+.slide.closed .slide-inner {
+    height: 300px;
+    width: 100%;
+}
+
+.slide.closed .ausblenden {
+    display: none;
+}
+
+.slide:not(.closed) .anzeigen {
+    display: none;
+}
+
+.slide:not(.closed) .rezept-img {
+    top: 0;
+    /*left: 240px;*/
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slide:not(.closed) .rezept-text {
+    width: 100%;;
+    left: 0;
+    top: 240px !important;
+}
+
+.slide:not(.closed) .rezept-text-inner {
+    padding-top: 90px;
+}
+
+.slide:not(.closed) h3 {
+    display: none;
+}
+
+/* mobile slider: */
+
+@media (max-width: 768px) {
+
+    .rezept-text-inner h3 {
+        font-size: 1.5rem;
+    }
+
+    .rezept-img {
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 85%;
+    }
+
+    .rezept-img img {
+        height: 150px;
+    }
+
+    .rezept-text {
+        width: 100%;
+        left: 0;
+        top: 85px !important;
+    }
+
+    .slide:not(.closed) .rezept-text {
+        top: 85px !important;
+    }
+
+    .rezept-text-inner {
+        padding-top: 90px;
+        text-align: center;
+    }
+
+    .zutaten-zubereitung {
+        text-align: left;
+    }
+
+    .slide.closed .slide-inner {
+        height: 310px;
+    }
+
+    .rezept-slider .slide {
+        padding: 0 20px;
+    }
+
+    .owl-nav {
+        font-size: 23px;
+    }
+}
+
+
+
+/* --- section: spezial-angebot --- */
+
+#spezial-angebot {
+    background-image: url('../sources/images/bild_14.jpg');
+    background-size: auto 1450px;
+    background-position: right top;
+    color: var(--light);
+}
+
+#spezial-angebot h2 {
+    margin-bottom: 70px;
+}
+
+.form-check .check {
+    height: 11px;
+    width: 11px;
+    background: var(--light);
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 6px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.form-check .check::after {
+    content: '\f00c';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: var(--dark);
+    display: block;
+    opacity: 0;
+    position: absolute;
+    left: 2px;
+    top: 0px;
+    transition: all .3s;
+    font-size: 8px;
+}
+.form-check input:checked ~ label .check::after {
+    opacity: 1;
+}
+
+.lieferadresse {
+    padding: 0 15px;
+    transition: all .3s;
+    max-height: 310px;
+}
+
+.lieferadresse.hidden {
+    max-height: 0;
+    transition: all .3s;
+    overflow: hidden;
+}
+
+
+
+/* --- section: Kontakt --- */
+
+#kontakt {
+    background: var(--light-grey);
+    position: relative;
+}
+
+#kontakt .section-inner {
+    max-width: 720px;
+}
+
+#kontakt h2 {
+    margin-bottom: 30px;
+}
+
+.kontakt-img {
+    max-width: 250px;
+    position: absolute;
+    top: 130px;
+    right: 0;
+}
+
+.kontakt-img img {
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.2);
+}
+
+.contact-data {
+    border-left: 5px solid var(--dark);
+    padding: 20px 10px 1px 10px;
+    margin-bottom: 65px;
+}
+
+.contact-data .link-underlined:nth-child(2) {
+    margin-top: 10px;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: var(--primary);
+    padding: 10px;
+    border-radius: 300px;
+    margin-right: 60px;
+}
+
+.social-icon img {
+    height: 30px;
+    width: 30px;
+    object-fit: contain;
+}
+
+
+
+/* --- section: impressum-datenschutz --- */
+
+.impressum-datenschutz-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.modal-content {
+    border-radius: 0;
+    border: 0;
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+    padding: 1rem 30px;
+}
+
+.modal-header .close {
+    font-size: 40px;
+    padding: .75rem .75rem;
+}
+
+.modal-body {
+    padding: 1rem 30px;
+}

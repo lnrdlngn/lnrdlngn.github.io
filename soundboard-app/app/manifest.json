@@ -3,19 +3,19 @@
   "name": "Warte",
   "icons": [
     {
-      "src": "/icons/icon192.png",
+      "src": "app/icons/icon192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/icons/icon512.png",
+      "src": "app/icons/icon512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
-  "start_url": "/",
+  "start_url": "/soundboard-app/",
   "background_color": "#222222",
   "display": "standalone",
-  "scope": "/",
+  "scope": "/soundboard-app/",
   "theme_color": "#222222"
 }

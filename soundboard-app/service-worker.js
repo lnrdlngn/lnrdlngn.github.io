@@ -19,8 +19,3 @@ workbox.routing.registerRoute(
     // Use cache but update in the background.
     new workbox.strategies.StaleWhileRevalidate()
 );
-
-workbox.routing.registerRoute(
-    new RegExp('/.*'),
-    new workbox.strategies.NetworkFirst()
-);

@@ -3,19 +3,19 @@
   "name": "Warte",
   "icons": [
     {
-      "src": "/app-content/app/icons/icon192.png",
+      "src": "app/icons/icon192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/app-content/app/icons/icon512.png",
+      "src": "app/icons/icon512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
-  "start_url": "/app-content/",
+  "start_url": "/",
   "background_color": "#222222",
   "display": "standalone",
-  "scope": "/app-content/",
+  "scope": "/",
   "theme_color": "#222222"
 }

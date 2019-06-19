@@ -10,6 +10,7 @@ if (workbox) {
 
 workbox.routing.registerRoute(
     /\.js$/,
+    new workbox.strategies.NetworkFirst()
 );
 
 workbox.routing.registerRoute(

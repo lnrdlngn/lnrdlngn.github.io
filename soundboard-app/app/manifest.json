@@ -1,0 +1,21 @@
+{
+  "short_name": "Warte",
+  "name": "Warte",
+  "icons": [
+    {
+      "src": "/app-content/app/icons/icon192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/app-content/app/icons/icon512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/app-content/",
+  "background_color": "#222222",
+  "display": "standalone",
+  "scope": "/app-content/",
+  "theme_color": "#222222"
+}

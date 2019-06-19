@@ -1,0 +1,17 @@
+body {
+  background: #222;
+  color: #fff;
+}
+
+div.buttons-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+button.btn.btn-primary {
+  border-radius: 500px;
+  height: 100px;
+  width: 100px;
+}

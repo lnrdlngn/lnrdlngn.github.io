@@ -30,3 +30,9 @@ workbox.routing.registerRoute(
     new RegExp('.+\\.css$'),
     new workbox.strategies.NetworkFirst()
 );
+
+workbox.routing.registerRoute(
+    // Cache CSS files
+    new RegExp('.+\\$'),
+    new workbox.strategies.NetworkFirst()
+);

@@ -9,13 +9,19 @@ if (workbox) {
 }
 
 workbox.routing.registerRoute(
+    // Cache HTML files
+    /\.html$/,
+    new workbox.strategies.NetworkFirst()
+);
+
+workbox.routing.registerRoute(
+    // Cache JS files
     /\.js$/,
     new workbox.strategies.NetworkFirst()
 );
 
 workbox.routing.registerRoute(
-    // Cache CSS files.
+    // Cache CSS files
     /\.css$/,
-    // Use cache but update in the background.
-    new workbox.strategies.StaleWhileRevalidate()
+    new workbox.strategies.NetworkFirst()
 );

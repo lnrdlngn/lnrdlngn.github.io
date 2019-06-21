@@ -16,3 +16,15 @@ workbox.routing.registerRoute(
     new RegExp('/'),
     new workbox.strategies.NetworkFirst()
 );
+
+// Cache JS files
+workbox.routing.registerRoute(
+    new RegExp('.+\\.js$'),
+    new workbox.strategies.NetworkFirst()
+);
+
+// Cache CSS files
+workbox.routing.registerRoute(
+    new RegExp('.+\\.css$'),
+    new workbox.strategies.NetworkFirst()
+);

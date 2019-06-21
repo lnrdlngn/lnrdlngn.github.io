@@ -10,18 +10,18 @@ if (workbox) {
 
 workbox.routing.registerRoute(
     // Cache HTML files
-    /\.html$/,
+    new RegExp('.+\\.html$'),
     new workbox.strategies.NetworkFirst()
 );
 
 workbox.routing.registerRoute(
     // Cache JS files
-    /\.js$/,
+    new RegExp('.+\\.js$'),
     new workbox.strategies.NetworkFirst()
 );
 
 workbox.routing.registerRoute(
     // Cache CSS files
-    /\.css$/,
+    new RegExp('.+\\.css$'),
     new workbox.strategies.NetworkFirst()
 );

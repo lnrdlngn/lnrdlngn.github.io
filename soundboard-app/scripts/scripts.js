@@ -18,13 +18,7 @@ $('document').ready(function () {
     objWarte.controls = false;
 
     $("#playWarte").click(function() {
-        if ($("#playWarte").hasClass('playing')) {
-            objWarte.pause();
-            $("#playWarte").removeClass('playing');
-        } else {
-            objWarte.play();
-            $("#playWarte").addClass('playing');
-        }
+        objWarte.play();
     });
 
 });

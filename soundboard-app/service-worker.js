@@ -32,7 +32,6 @@ workbox.routing.registerRoute(
 );
 
 workbox.routing.registerRoute(
-    // Cache CSS files
-    new RegExp('.+\\$'),
-    new workbox.strategies.NetworkFirst()
+  new RegExp('/'),
+  new workbox.strategies.NetworkFirst()
 );

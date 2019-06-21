@@ -8,6 +8,11 @@ if (workbox) {
     console.log(`Boo! Workbox didn't load 😬`);
 }
 
+// Force development builds
+workbox.setConfig({ debug: true });
+
+
+
 workbox.routing.registerRoute(
     // Cache HTML files
     new RegExp('.+\\.html$'),

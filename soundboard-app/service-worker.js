@@ -13,6 +13,6 @@ workbox.setConfig({ debug: true });
 
 // Cache all files
 workbox.routing.registerRoute(
-  new RegExp('/'),
-  new workbox.strategies.NetworkFirst()
+    new RegExp('/'),
+    new workbox.strategies.NetworkFirst()
 );
